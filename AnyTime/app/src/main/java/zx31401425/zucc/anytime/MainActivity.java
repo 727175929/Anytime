@@ -1,5 +1,6 @@
 package zx31401425.zucc.anytime;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,8 @@ import java.util.List;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import zx31401425.zucc.anytime.Home_Page.Home_Page;
+import zx31401425.zucc.anytime.RegiserActivity.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private boolean isHideFirst = true;// 输入框密码是否是隐藏的，默认为true
@@ -43,17 +46,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.login_button) {
-            if(Uname_Text.getText().toString().length()<=0){
+            /*if(Uname_Text.getText().toString().length()<=0){
                 showExitDialog01("账号不能为空");
             }
             else if(Upass_Tets.getText().toString().length()<=0){
                 showExitDialog01("密码不能为空");
             }
             else
-            sendRequestWithOkHttp(Uname_Text.getText().toString());
+            sendRequestWithOkHttp(Uname_Text.getText().toString());*/
+            Intent intent =new Intent(MainActivity.this,Home_Page.class);
+            startActivity(intent);
         }
         else if(view.getId() == R.id.register_button){
-
+            Intent intent =new Intent(MainActivity.this,RegisterActivity.class);
+            startActivity(intent);
         }
     }
     private void sendRequestWithOkHttp(final String Uname) {   //okhttp  get方式获取服务器数据

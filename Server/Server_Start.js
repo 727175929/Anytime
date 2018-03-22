@@ -3,6 +3,7 @@ var app = express();
 var mysql = require('mysql');
 
 var GetUsersPass = require('./Get_UsersPass');   //登录 用户的账号密码
+var SaveUsersPass = require('./Register');   //登录 用户的账号密码
 
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -21,4 +22,4 @@ var server = app.listen(3000, function () {
 });
 
 app.use('/Users/get',GetUsersPass);
-  
+app.use('/Users/save',SaveUsersPass);

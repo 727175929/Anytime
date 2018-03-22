@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="zx31401425.zucc.anytime.MainActivity">
-
+    tools:context="zx31401425.zucc.anytime.RegiserActivity.RegisterActivity">
     <ImageView
         android:id="@+id/login_avatar"
         android:layout_width="48dp"
@@ -14,6 +14,7 @@
         android:src="@drawable/logo"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="72dp"/>
+
     <EditText
         android:id="@+id/login_id"
         android:layout_width="320dp"
@@ -25,26 +26,34 @@
         android:hint="@string/textlogin_id"/>
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/Uname"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:background="@color/colorLoginEditText"
-        android:inputType="textPassword"
+        android:hint="输入姓名"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/login_password1"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorLoginEditText"
         android:hint="@string/textlogin_password"
         android:paddingLeft="8dp" />
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal"
+    <EditText
+        android:id="@+id/login_password2"
         android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape"
-        android:text="@string/text_loginbutton"
-        android:textColor="@color/colorlogin_text"
-        android:textSize="20dp" />
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorLoginEditText"
+        android:hint="请再次输入密码"
+        android:paddingLeft="8dp" />
 
     <Button
         android:id="@+id/register_button"

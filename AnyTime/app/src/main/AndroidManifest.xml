@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegiserActivity.RegisterActivity" />
+        <activity android:name=".Home_Page.Home_Page"></activity>
     </application>
 
 </manifest>
