@@ -1,9 +1,8 @@
 package zx31401425.zucc.anytime.RegiserActivity;
 
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -20,8 +19,9 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import zx31401425.zucc.anytime.MainActivity;
 import zx31401425.zucc.anytime.R;
-import zx31401425.zucc.anytime.Users_Pass;
+import zx31401425.zucc.anytime.Task_All.ReleaseTaskActivity;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
     Button RegisterButton;

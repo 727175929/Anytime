@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zx31401425.zucc.anytime.Task_All.ReleaseTaskActivity">
+    <ImageView
+        android:id="@+id/login_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"/>
+
+    <EditText
+        android:id="@+id/Edit_TaskId"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:paddingLeft="8dp"
+        android:background="@color/colorLoginEditText"
+        android:hint="请输入任务ID"/>
+
+    <EditText
+        android:id="@+id/Edit_PublisherUName"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorLoginEditText"
+        android:hint="输入发布者姓名"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/Edit_TaskDetails"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorLoginEditText"
+        android:hint="请输入详细内容"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape"
+        android:text="发布任务"
+        android:textColor="@color/colorlogin_text"
+        android:textSize="20dp" />
+
+</LinearLayout>

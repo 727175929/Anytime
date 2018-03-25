@@ -1,5 +1,6 @@
 package zx31401425.zucc.anytime.Home_Page;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -11,7 +12,10 @@ import android.widget.TextView;
 
 import com.jude.rollviewpager.RollPagerView;
 
+import zx31401425.zucc.anytime.MainActivity;
 import zx31401425.zucc.anytime.R;
+import zx31401425.zucc.anytime.Task_All.AllTaskActivity;
+import zx31401425.zucc.anytime.Task_All.ReleaseTaskActivity;
 
 
 public class Home_Page extends AppCompatActivity implements View.OnClickListener{
@@ -73,9 +77,11 @@ public class Home_Page extends AppCompatActivity implements View.OnClickListener
         if(view.getId() == R.id.cardView1){
 
         }else if(view.getId() == R.id.cardView2){
-
+            Intent intent =new Intent(Home_Page.this,ReleaseTaskActivity.class);
+            startActivity(intent);
         }else if(view.getId() == R.id.cardView3){
-
+            Intent intent =new Intent(Home_Page.this,AllTaskActivity.class);
+            startActivity(intent);
         }else if(view.getId() == R.id.cardView4){
 
         }

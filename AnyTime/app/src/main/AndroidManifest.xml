@@ -19,7 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegiserActivity.RegisterActivity" />
-        <activity android:name=".Home_Page.Home_Page"></activity>
+        <activity android:name=".Home_Page.Home_Page" />
+        <activity android:name=".Task_All.AllTaskActivity" />
+        <activity android:name=".Task_All.ReleaseTaskActivity" />
+        <activity android:name=".Task_All.MyTaskActivity"></activity>
     </application>
 
 </manifest>
